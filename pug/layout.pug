@@ -1,0 +1,51 @@
+mixin webp(name, format)
+  picture
+    source(srcset="./img/webp/" + name + ".webp" type="image/webp" alt="")
+    img(src="./img/" + name + "." + format + "" , alt="")
+
+block condition
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Клиника Глазуновой
+    meta(name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="./styles/css/vendor.css")
+    link(rel="stylesheet", href="./styles/css/main.css")
+  body
+
+    main.page
+      header.header
+        .wrapper
+          .header__container
+            .header__left
+              a(href="").logo
+                img(src="./img/logo.svg", alt="")
+              nav
+                a(href="").nav__link Стихи
+                a(href="").nav__link Поэты
+            .header__right
+
+      block content
+
+      footer.footer
+        .wrapper
+          .footer__container
+            .footer__left 
+              a(href="").logo
+                img(src="./img/logo.svg", alt="")
+              nav
+                a(href="").nav__link Стихи
+                a(href="").nav__link Поэты
+            .footer__right
+              .copyright &copy; Poetist, 2021
+
+
+    script(src="./js/main.js")
