@@ -1,0 +1,40 @@
+.index-link
+  display block
+  background-color $bg-light
+  border-radius 16px
+  overflow hidden
+  padding 2.4rem
+  position relative
+  &__name
+    font-size 2rem
+  &__text
+    line-height 1.4
+    margin-bottom 0.4em
+    opacity .7
+  &__hover
+    opacity 0
+    position absolute
+    right 2.2rem
+    top 2.2rem
+    transform translate(-.8rem, .8rem)
+    transition $transition
+  &:before
+    background-color $primary
+    border-radius 50%
+    content ''
+    filter blur(40px)
+    opacity 0
+    position absolute
+    right -14rem
+    top -14rem
+    transition $transition
+    size(14rem)
+  &:hover
+    &:before
+      opacity 1
+      right -7rem
+      top -7rem
+    .index-link
+      &__hover
+        opacity 1
+        transform none

@@ -7,6 +7,35 @@ block content
     section.section
 
       .container
-        .col.col--lg-5
+        .col.col_lg-5
           h1 Скрипты и&nbsp;парсеры для сайтов
           .btn Заказать разработку
+        .col.col_lg-7
+          .lottie
+            lottie-player(src="./lottie/data.json"  background="transparent"  speed="1" autoplay)
+
+    section.section
+      .index-links
+        .container
+          .col.col_lg-4
+            a(href="").index-link
+              h4.index-link__name Парсеры
+              .index-link__text Помогу вам с настройкой сервера, написанием скриптов или более сложных вещей. Ну или 
+              .index-link__hover
+                img(src="./img/index-link.svg")
+          .col.col_lg-4
+            a(href="").index-link
+              h4.index-link__name Скрипты
+              .index-link__text Помогу вам с настройкой сервера, написанием скриптов или более сложных вещей. Ну или 
+              .index-link__hover
+                img(src="./img/index-link.svg")
+          .col.col_lg-4
+            a(href="").index-link
+              h4.index-link__name Разработка
+              .index-link__text Помогу вам с настройкой сервера, написанием скриптов или более сложных вещей. Ну или 
+              .index-link__hover
+                img(src="./img/index-link.svg")
+
+
+  //- script(src="./js/lottie.min.js")
+  script(src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
