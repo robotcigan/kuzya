@@ -1,6 +1,5 @@
 .header
   align-items center
-  background-color $light-header
   display flex
   margin-bottom 2.4rem
   min-height 4.8rem
@@ -8,19 +7,37 @@
     align-items center
     display flex
     justify-content space-between
+    overflow hidden
+    padding 3.2rem 0
+    position relative
+  &__hover
+    bottom 0
+    content ''
+    background $gradient2
+    height 2px
+    left 0
+    position absolute
+    // transition $transition
+    transform translateY(4px)
+    width 10%
+    &_active
+      transform none
   &__left
     align-items center
     display flex
   &:hover
-    .search
-      &__input
-        border-color #e3e3e3
+    .header
+      &__container
+        &:after
+          background $gradient
+          height 2px
 
 .nav
   &__link
     font-size 1.4rem
     &:not(:last-child)
       margin-right 1em
+
 
 .search
   display flex

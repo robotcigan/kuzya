@@ -8,61 +8,17 @@
   display inline-flex
   font-family $font
   font-size 1.6rem
-  // font-weight 500
   justify-content center
   line-height 1
-  // letter-spacing -.2px
   max-height 6.4rem
   overflow hidden
   padding 2.4rem 4rem
   position relative
-  vertical-align bottom
-  &:before
-    background-color $primary - 7%
-    content ''
-    left 0
-    height 100%
-    position absolute
-    top 0
-    transition $transition
-    width 0
-    z-index 0
-  &__text
-    position relative
-    transition $transition
-    z-index 10
-    &:nth-child(2)
-      opacity 0
-      position absolute
-      transform translateY(100%)
-  &_ghost
-    background-color transparent
-    &:before
-      display none
-    .btn
-      &__text
-        color $primary
+  transition $transition
+  vertical-align center
   &:hover
-    &:before
-      width 100%
-    .btn
-      &__text
-        &:nth-child(1)
-          opacity 0
-          transform translateY(-100%)
-        &:nth-child(2)
-          opacity 1
-          transform none
-  &--small
-    padding 1.6rem 2.4rem
-  &--transparent
-    background-color rgba(#fff, .2)
-  &--full
-    width 100%
-  & + &
-    margin-left 2rem
-  & + .slider
-    margin-top 3.2rem
+    background-color $primary - 15%
+
 
 .swal2-styled.swal2-confirm
   background-color $primary !important
